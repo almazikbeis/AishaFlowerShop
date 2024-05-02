@@ -1,0 +1,130 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background-color: white;
+}
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-logo p {
+    color: rgb(73, 76, 76);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: rgb(73, 76, 76);
+    font-size: 21px;
+    font-weight: 400;
+    color:  #14D608;
+}
+.nav-menu li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    
+}
+.nav-menu hr{
+    border: none;
+    color:  #14D608;
+    width: 75%;
+    height: 4px;
+    border-radius: 10px;
+    background-color:#B7E51B(67, 252, 0);
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-login-cart button{
+    width: 150px;
+    height: 55px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 70px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.nav-login-cart button:active{
+    background: aquamarine;
+}
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -70px;
+    margin-left: -60px;
+    margin-right: 0px;
+    border-radius: 11px;
+    font-size: 14px;
+    background-color:#B7E51B;
+    color: azure;
+}
+.nav-menu li a.active {
+    background-color: #A98CC5; /* Highlight color for the active item */
+    color: white; /* Text color for the active item */
+    text-decoration: underline; /* Подчеркивание при активации */
+  }
+.nav-menu a {
+    color: #D2691E; /* Желаемый цвет для ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+  }
+  
+  /* Стиль для активной ссылки */
+.nav-menu a.active {
+    font-weight: bold; 
+    text-decoration:underline; /* Желаемый стиль для активной ссылки */
+  }
+  /* Базовые стили */
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+    background-color: white;
+}
+
+/* Дополнительные стили для устройств с шириной экрана менее 768px (мобильные устройства) */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+
+    .nav-login-cart {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-cart-count {
+        margin-left: 0;
+    }
+}

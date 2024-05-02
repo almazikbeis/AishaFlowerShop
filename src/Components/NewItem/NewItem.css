@@ -1,0 +1,44 @@
+.newitem {
+    width: 350px;
+    position: relative; /* Добавляем позиционирование для псевдоэлемента */
+}
+
+.newitem img {
+    width: 360px;
+    height: 450px;
+}
+
+.newitem:hover img {
+    filter: brightness(0); /* Делаем изображение черно-белым */
+}
+
+.newitem:hover::after {
+    content: attr(data-title); /* Замените 'Ваш текст' на желаемую надпись */
+    color: #B7E51B;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    background-color:  #ffffff; /* Белый фон */
+    padding: 10px; /* Добавляем отступы */
+    opacity: 0.8;
+    z-index: 1;
+    text-align: center;
+}
+
+.newitem p {
+    margin: 6px 0px;
+    color: #FF7F7F;
+}
+
+
+.newitem:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+    opacity: 0.5;
+
+}
+

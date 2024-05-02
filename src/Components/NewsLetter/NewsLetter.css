@@ -1,0 +1,87 @@
+.newsletter {
+    width: 65%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 140px;
+    background: #DBB631;
+    gap: 10px;
+    margin-bottom: 20px; /* Позитивное значение вместо отрицательного */
+    margin-top: 400px;
+     background-color:#ffffff; 
+}
+.body{
+    background-color: #454545;
+}
+.newsletter h1{
+    color:#FF7F7F;
+    font-size: 55px;
+    font-weight: 600;
+}
+.newsletter p {
+    color: #FF7F7F;
+    font-size: 20px;
+}
+.newsletter div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    width: 730px;
+    height: 70px;
+    border-radius: 80px;
+    border: 1px solid #e3e3e3;
+}
+.newsletter input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color:  #616161;
+    font-family: Poppins;
+    font-size: 16px;
+
+}
+.newsletter div button{
+        width: 210px;
+        height: 70px;
+        border-radius: 80px;
+        background-color: #FF7F7F;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+}
+@media (max-width: 768px) {
+    .newsletter {
+        width: 90%; /* Изменяем ширину блока .newsletter для маленьких экранов */
+        padding: 0px 10px; /* Уменьшаем внутренний отступ */
+        margin-top: 20px; /* Перемещаем блок вверх для предотвращения наложения */
+        height: auto; /* Высота зависит от содержимого */
+    }
+
+    .newsletter h1 {
+        font-size: 30px; /* Уменьшаем размер шрифта */
+    }
+
+    .newsletter p {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+    }
+
+    .newsletter div {
+        width: 100%; /* Занимает 100% ширины блока .newsletter */
+        padding: 10px; /* Добавляем внутренний отступ */
+    }
+
+    .newsletter input {
+        width: 100%; /* Занимает 100% ширины блока .newsletter */
+        margin: 10px 0; /* Добавляем отступы между элементами */
+    }
+
+    .newsletter div button {
+        height: 40px; /* Уменьшаем высоту кнопки */
+        margin-top: 10px; /* Добавляем отступ сверху */
+    }
+}
